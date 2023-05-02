@@ -78,7 +78,7 @@ def transcribe_audio(audio_path):
     print(f"Number of errors: {error_count}")
     return text,file_name
 
-def save_text(text, directory_path, file_name, extension="txt"):
+def save_text(text, file_name, directory_path=None, extension="txt"):
     if directory_path:
         file_path = os.path.join(directory_path, f'transcript_{file_name}.{extension}')
     else:
